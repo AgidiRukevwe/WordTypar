@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Typing Game</title>
+    <link rel="stylesheet" type="text/css" href="animate.css" />
+    <link rel="stylesheet" type="text/css" href="./typingGame.css" />
+  </head>
+  <body>
+    <section class="preloader">
+      <h1 class="intro animated slideInUp">word_typar</h1>
+      <span id="bar" class="animated slideInLeft"></span>
+      <p id="subText" class="animated slideInDown">
+        A simple word Typing game to help improve typing speed
+      </p>
+      <p id="author" class="animated fadeInRight">By Rukky.A</p>
+    </section>
+
+    <div class="body">
+      <header>
+        <h1 class="animated delay-2s fadeIn">WORD TYPAR</h1>
+        <div id="burgerClosed" class="burger animated slideInDown">
+          <span id="burg_a"></span>
+          <span id="burg_b"></span>
+          <span id="burg_c"></span>
+        </div>
+      </header>
+
+      <nav class="closed">
+        <h1 id="nav-header">Menu</h1>
+        <ul>
+          <li id="highScore">High Score</li>
+          <li id="level">Level Difficulty</li>
+          <div class="levels">
+            <button id="easy">easy</button>
+            <button id="medium">medium</button>
+            <button id="hard">hard</button>
+          </div>
+          <li id="instruction">Instruction</li>
+        </ul>
+      </nav>
+
+      <main>
+        <p>Typing the given word within <span id="sec">5</span> seconds</p>
+        <h1 id="currentWord" class="animated fadeInDown">HELLO</h1>
+        <input
+          type="text"
+          placeholder="Start Typing"
+          id="word-input"
+          autofocus
+        />
+        <div class="sub">
+          <p>Time Left: <span id="time"> 0</span></p>
+          <p>Score: <span id="score"> 0</span></p>
+        </div>
+        <h4 id="message"></h4>
+      </main>
+    </div>
+    <script type="module" src="typingGame.js"></script>
+    <!-- <script src="list2.json"></script> -->
+  </body>
+</html>
